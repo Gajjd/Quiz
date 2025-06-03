@@ -1,0 +1,69 @@
+body{
+    background-image: url(fotoFundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+main{
+    background-color: rgba(226, 225, 225, 0.736);
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    border-radius: 50px;
+    border: 3px solid;
+}
+
+.blocoInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 50px;
+    padding: 5px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+
+.Respostas{
+    display: flex;
+    flex-direction: column;
+}
+
+.Botão{
+    background-color: rgb(216, 196, 155);
+    margin: 5px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.trocaPergunta{
+    margin: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botaoIrVoltar{
+    background-color: rgba(0, 0, 0, 0.25);
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+}
