@@ -9,6 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 main{
@@ -22,6 +23,12 @@ main{
     padding: 10px;
     border-radius: 50px;
     border: 3px solid;
+    box-shadow: 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+main:hover {
+    transform: scale(1.01);
 }
 
 .blocoInfo{
@@ -52,6 +59,18 @@ main{
     font-size: 20px;
 }
 
+.correta {
+    background-color: #4CAF50 !important;
+    color: white;
+    border: none;
+}
+
+.errada {
+    background-color: #f44336 !important;
+    color: white;
+    border: none;
+}
+
 .trocaPergunta{
     margin: 10px;
     width: 80%;
@@ -66,4 +85,11 @@ main{
     border-radius: 10px;
     font-size: 15px;
     color: white;
+}
+
+.Botão:hover, .botaoIrVoltar:hover {
+    background-color: rgb(196, 176, 135);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.2s;
 }
