@@ -2,42 +2,33 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <form id="quiz-form" onsubmit="return verificarResposta(event)">
-        <h2 class="blocoInfo">Pergunta: Quem foi o primeiro homem criado por Deus?</h2>
+  <div id="quiz-header">
+    <img src="Logo.png" style="width: 40px;" />
+    <span id="questionCounter">Pergunta 1</span>
+    <span id="scoreCounter">Pontos: 0</span>
+  </div>
 
-        <label class="Botão">
-            <input type="radio" name="resposta" value="false">
-            Zeus
-        </label>
-        <label class="Botão">
-            <input type="radio" name="resposta" value="true">
-            Adão
-        </label>
+  <form id="quizForm">
+    <h2 class="blocoInfo" id="questionText">Carregando pergunta...</h2>
 
-        <label class="Botão">
-            <input type="radio" name="resposta" value="false">
-            Jesus
-        </label>
-        <label class="Botão">
-            <input type="radio" name="resposta" value="false">
-            Moisés
-        </label>
-        <br>
-        <button class="botaoEnviar" type="submit" id="submit-btn">Enviar</button>
-    </form>
+    <div id="optionsContainer"></div>
 
-    <div id="resultado"></div>
+    <button class="botaoDificuldade" type="submit">
+      <a>Enviar</a>
+    </button>
+  </form>
 
-    <script src="script.js"></script>
+  <div id="result" class="textoBranco"></div>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
